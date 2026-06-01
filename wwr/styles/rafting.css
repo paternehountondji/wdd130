@@ -27,6 +27,35 @@ footer {
     margin: 0 auto;
 }
 
+/* Header Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    width: 120px;
+}
+
+/* Nav avec Flexbox */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
 /* Headings */
 h1,
 h2 {
@@ -35,7 +64,6 @@ h2 {
 }
 
 /* Spacing */
-nav,
 p,
 section,
 article {

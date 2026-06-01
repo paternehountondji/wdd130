@@ -1,5 +1,52 @@
-main {
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header et Footer */
+header,
+.grid,
+footer {
     max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Nav avec Flexbox */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Liens du nav */
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* H1 avec bordure */
+h1 {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+/* Grid pour main et aside */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
@@ -10,6 +57,9 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -33,15 +83,4 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
 }
