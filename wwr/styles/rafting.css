@@ -40,7 +40,7 @@ header img {
     width: 120px;
 }
 
-/* Nav avec Flexbox */
+/* Nav */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -63,6 +63,11 @@ h2 {
     color: var(--primary-color);
 }
 
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
 /* Spacing */
 p,
 section,
@@ -71,18 +76,39 @@ article {
     padding: 8px;
 }
 
-/* Social media links */
+/* Social media */
 .socialmedia a {
     text-decoration: none;
 }
 
-/* Social media icons size */
 .socialmedia img {
     width: 40px;
     height: auto;
 }
 
-/* Hero div */
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 1rem;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hero */
 .hero {
     position: relative;
 }
@@ -93,8 +119,8 @@ article {
     height: auto;
 }
 
-/* H1 over hero */
-h1 {
+/* H1 inside hero only */
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -116,10 +142,36 @@ h1 {
     width: 50%;
 }
 
-/* Image inside article */
 .hero article img {
     float: right;
     width: 125px;
+}
+
+/* Adventures */
+.adventures-grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.adventures-grid figure {
+    text-align: center;
+    width: 150px;
+}
+
+.adventures-grid img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.adventures-grid figcaption {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 /* Contact page */
@@ -137,6 +189,11 @@ h1 {
     align-items: start;
 }
 
+.map iframe {
+    width: 100%;
+    height: 300px;
+}
+
 .contact-form {
     display: grid;
     gap: 0.8rem;
@@ -145,7 +202,7 @@ h1 {
     border-radius: 0.5rem;
 }
 
-.contact-form .form-item {
+.form-item {
     display: grid;
     gap: 0.3rem;
 }
@@ -158,6 +215,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 0.3rem;
     width: 100%;
+    font-family: var(--body-font);
 }
 
 .radio-group {
@@ -167,12 +225,35 @@ h1 {
 
 .radio-group label {
     text-align: left;
+    padding: 0;
+}
+
+.checkbox-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-/* Employees section */
+.checkbox-item input {
+    width: auto;
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: var(--body-font);
+}
+
+.contact-form button:hover {
+    background-color: darkgreen;
+}
+
+/* Employees */
 .employees {
     text-align: center;
     margin: 1rem;
@@ -205,10 +286,4 @@ h1 {
     margin-top: 0.5rem;
     font-weight: bold;
     color: var(--primary-color);
-}
-
-/* Map */
-.map iframe {
-    width: 100%;
-    height: 350px;
 }
