@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+/* Header */
+header {
+    width: 600px;
+    margin: 1rem auto;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+/* Form */
+form {
+    width: 600px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Legend */
+legend {
+    padding: 0.5rem;
+    color: #003366;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Form items */
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #003366;
+    border-color: #003366;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+footer {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5rem;
+}
+
+code {
+    display: block;
+    background-color: #222;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: monospace;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+}
